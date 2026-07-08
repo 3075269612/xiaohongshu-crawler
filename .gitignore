@@ -1,0 +1,41 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Claude assistant
+.claude/
+
+# Temp and lock files
+~$*.pptx
+*.log
+
+# Secrets and local configs (may contain tokens/passwords)
+.env
+**/config/*.local.*
+**/logs/
+
+# Output artifacts (videos, datasets — large or regenerable)
+**/outputs/
+**/downloads/
+
+# Submission zip (contains personal info)
+*.zip
+
+# System artifacts
+%SystemDrive%/
+_*
+
+# Local crawl/debug data
+**/data/debug_*.html
+**/data/*.jsonl
+**/data/xhs_statistics*.json
+**/data/xhs_user_queue.txt
+**/data/xhs_visited_users.txt
+exp4_social_media/delivery/3-*/

@@ -1,0 +1,2 @@
+# 每行一个小红书用户主页 URL，示例：
+# https://www.xiaohongshu.com/user/profile/xxxxxxxxxxxxxxxxxxxxxxxx

@@ -1,0 +1,26 @@
+{
+  "platform": "to_be_selected",
+  "start_urls": [],
+  "target_user_count": 100,
+  "target_post_count": 5000,
+  "target_video_post_count": 50,
+  "request": {
+    "min_interval_seconds": 2,
+    "max_interval_seconds": 8,
+    "max_retries": 3
+  },
+  "storage": {
+    "jsonl_path": "social_media_crawler/data/posts.jsonl",
+    "stats_path": "social_media_crawler/data/statistics.json",
+    "mongo_uri": "mongodb://localhost:27017",
+    "mongo_database": "social_media_crawler",
+    "mongo_collection": "posts"
+  },
+  "notification": {
+    "enabled": false,
+    "smtp_host": "",
+    "smtp_port": 465,
+    "sender": "",
+    "receiver": ""
+  }
+}

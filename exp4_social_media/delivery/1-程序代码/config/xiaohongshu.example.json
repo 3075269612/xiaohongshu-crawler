@@ -1,0 +1,37 @@
+{
+  "platform": "xiaohongshu",
+  "start_urls": [
+    "https://www.xiaohongshu.com/user/profile/请替换为用户ID"
+  ],
+  "target_user_count": 100,
+  "target_post_count": 5000,
+  "target_video_post_count": 50,
+  "request": {
+    "min_interval_seconds": 6,
+    "max_interval_seconds": 15,
+    "max_retries": 3,
+    "scroll_times_per_user": 12,
+    "scroll_pause_seconds": 2
+  },
+  "browser": {
+    "headless": false,
+    "manual_login_wait_seconds": 60,
+    "page_load_wait_seconds": 5
+  },
+  "storage": {
+    "jsonl_path": "social_media_crawler/data/xhs_posts.jsonl",
+    "stats_path": "social_media_crawler/data/xhs_statistics.json",
+    "visited_users_path": "social_media_crawler/data/xhs_visited_users.txt",
+    "task_queue_path": "social_media_crawler/data/xhs_user_queue.txt",
+    "mongo_uri": "mongodb://localhost:27017",
+    "mongo_database": "social_media_crawler",
+    "mongo_collection": "xhs_posts"
+  },
+  "notification": {
+    "enabled": false,
+    "smtp_host": "",
+    "smtp_port": 465,
+    "sender": "",
+    "receiver": ""
+  }
+}
